@@ -47,13 +47,5 @@ public class Ejemplo01  {
 
     //Utilizando el % para el módulo o resto de la división mientras se concatenan varias variables intercaladas
     System.out.println("El resto de dividir " + num1 +" entre "+num2+" es: " + num1 % num2);
-
-    int a = 9;
-    int b = 2;
-
-    double division;
-
-    //Lo que hace el double, es castear la variable y lo que hace es básicamente cambiar de tipo de variable
-    System.out.println("el casting de la variable a es " + (double) a);
   }
 }
