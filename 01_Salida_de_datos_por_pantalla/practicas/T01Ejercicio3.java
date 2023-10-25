@@ -3,7 +3,7 @@
  * 
  * @author Luis Godino
  */
-public class Ejercicio3 {
+public class T01Ejercicio3 {
   public static void main(String[] args) {
     System.out.println("House     Casa");
     System.out.println("Car       Coche");
