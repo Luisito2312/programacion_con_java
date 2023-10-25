@@ -4,7 +4,7 @@
  * @author Luis Godino
  */
 
-public class Ejercicio5 {
+public class T02Ejercicio5 {
   public static void main(String[] args) {
     
     double peseta = 245;

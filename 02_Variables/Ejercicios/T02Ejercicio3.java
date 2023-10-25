@@ -3,7 +3,7 @@
  * 
  * @author Luis Godino
  */
-public class Ejercicio3 {
+public class T02Ejercicio3 {
   public static void main(String[] args) {
     
     String nombre = "Luis Godino Wallace";

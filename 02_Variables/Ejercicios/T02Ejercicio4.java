@@ -3,7 +3,7 @@
  * 
  * @author Luis Godino
  */
-public class Ejercicio4 {
+public class T02Ejercicio4 {
   public static void main(String[] args) {
     
     double euros = 25.3;
