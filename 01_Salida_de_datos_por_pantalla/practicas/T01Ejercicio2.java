@@ -3,7 +3,7 @@
  * 
  * @author Luis Godino
  */
-public class Ejercicio2 {
+public class T01Ejercicio2 {
   public static void main(String[] args) {
     System.out.println("Me llamo Luis Godino Wallace");
     System.out.println("Mi dirección es  Paseo del Castillo N22");

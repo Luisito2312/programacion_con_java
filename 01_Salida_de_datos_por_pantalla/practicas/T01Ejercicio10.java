@@ -4,7 +4,7 @@
  * @author Luis Godino
  */
 
-public class Ejercicio10 {
+public class T01Ejercicio10 {
   public static void main(String[] args) {
     System.out.print("\033[1;32mHELLO \033[0m  \033[1;35m{\\__/}   ");
     System.out.println("\033[0m");  //reseteo de color
