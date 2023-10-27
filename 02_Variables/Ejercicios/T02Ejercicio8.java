@@ -15,6 +15,6 @@ public class T02Ejercicio8 {
 
     String entero =(primera + "" + segunda + "" + tercera + "" + cuarta + "" + quinta);
 
-    System.out.println( "Mi nombre y primera letra de mi apellido son: " + entero );
+    System.out.println( "Mi nombre y primera letra de mi apellido soncd de  : " + entero );
   }
 }
