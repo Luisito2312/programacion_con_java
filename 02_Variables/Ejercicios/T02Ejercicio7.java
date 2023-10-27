@@ -12,3 +12,6 @@ public class T02Ejercicio7 {
     System.out.println("Mi nombre es " + nombre +" Y la primera letra de mi apellido es " + a);
   }
 }
+
+//Para que al sumar dos variables de tipo char, tienes que ponerlo con unas comillas entre medias. 
+//

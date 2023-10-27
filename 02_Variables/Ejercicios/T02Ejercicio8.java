@@ -13,8 +13,8 @@ public class T02Ejercicio8 {
     char cuarta = 'S';
     char quinta = 'G';
 
-    String entero =(primera + segunda)
+    String entero =(primera + "" + segunda + "" + tercera + "" + cuarta + "" + quinta);
 
-    System.out.println( "La concatenación de los siguientes char es: " );
+    System.out.println( "Mi nombre y primera letra de mi apellido son: " + entero );
   }
 }
