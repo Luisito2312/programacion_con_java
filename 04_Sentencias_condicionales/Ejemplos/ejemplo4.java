@@ -28,5 +28,6 @@ public class ejemplo4 {
           System.out.println("Es fin de semana");
           break;   
         }
-    }
+        sc.close();  
+      }  
 }
