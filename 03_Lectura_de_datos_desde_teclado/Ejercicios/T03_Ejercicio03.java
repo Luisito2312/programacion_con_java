@@ -10,16 +10,20 @@ public class T03_Ejercicio03 {
   public static void main(String[] args) {
     
               
-   double cambio = 0.006; 
+    double cambio = 0.006; 
 
-        try (Scanner input = new Scanner(System.in)) {
-          System.out.print("Introduzca el número de pesetas: ");
-          double pesetas = input.nextDouble();
+    Scanner sc = new Scanner(System.in);
+    int pesetas;
+
+    System.out.println("Introduca el importe en pesetas");
+    pesetas = sc.nextInt();
 
           
-          double euross = pesetas * cambio;
+    double euross = pesetas * cambio;
 
           System.out.println(pesetas + " el total de euros es " + euross + " euros.");
+
+          sc.close();
         }
   }
-}
+
