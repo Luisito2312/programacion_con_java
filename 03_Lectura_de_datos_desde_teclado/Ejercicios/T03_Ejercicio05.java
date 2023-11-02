@@ -1,5 +1,5 @@
 /*
- E neste código sacamos el area de un rectangulo
+ En este código sacamos el area de un rectangulo
  * 
  * @author Luis Godino
  */
