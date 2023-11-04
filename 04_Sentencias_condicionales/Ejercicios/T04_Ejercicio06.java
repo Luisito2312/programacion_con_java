@@ -18,7 +18,13 @@ public class T04_Ejercicio06 {
 
     double operacion = Math.sqrt((2 * altura) / gravedad);
 
-    System.out.println("El resultado de la operación es: " + operacion);
+  if (altura <= 0) {
+    System.out.println("Ha introducido un valor no permitido");
+  }
+  else {
+    System.out.println("Lo que tardará un objeto en llegar al suelo es: " + operacion);
+  }
+    
 
     sc.close();
   }
