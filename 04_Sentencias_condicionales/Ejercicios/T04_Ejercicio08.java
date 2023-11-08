@@ -1,3 +1,8 @@
+/*
+ Haz un código que te haga media de tres notas y que te diga que tienes.
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T04_Ejercicio08 {
