@@ -23,5 +23,7 @@ public class T04_Ejercicio07 {
     else {
       System.out.println("Has aprobado");
     }
+
+    sc.close();
   }
 }
