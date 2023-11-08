@@ -21,7 +21,7 @@ public class T04_Ejercicio05 {
       System.out.println("El valor introducido para una de las variables hace que el resultado no sea posible");
      }
      else {
-      System.out.println("El resultado de la ecuación es: " + x);
+      System.out.printf("El resultado de la ecuación es: %.3f" , x);
      }
     sc.close();
   }
