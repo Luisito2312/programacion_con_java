@@ -1,3 +1,8 @@
+/*
+ Hacer un código que 
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T04_Ejercicio18 {
