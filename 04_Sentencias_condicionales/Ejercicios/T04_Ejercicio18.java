@@ -5,7 +5,6 @@ public class T04_Ejercicio18 {
     
     Scanner sc = new Scanner(System.in);
 
-    int numero;
     int primera = 0;
 
     System.out.println("Introduce un número");
