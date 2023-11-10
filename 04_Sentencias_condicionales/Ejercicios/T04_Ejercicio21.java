@@ -6,22 +6,22 @@ public class T04_Ejercicio21 {
     Scanner sc = new Scanner(System.in);
 
     System.out.println("Introduce las dos notas que has sacado en los examenes de programación separados por un espacio");
-    int nota1 = sc.nextInt();
-    int nota2 = sc.nextInt();
+    Double nota1 = sc.nextDouble();
+    double nota2 = sc.nextDouble();
     sc.nextLine();
-    int media = (nota1 + nota2) / 2;
+    double media = (nota1 + nota2) / 2;
 
     if (media < 5) {
       System.out.println("Que calificación tiene en el examen de recuperación ( apto/no apto )");
       String recup = sc.nextLine();
 
       if (recup.equals("apto")) {
-        System.out.println("Enhorabuena, has aprobado");
+        System.out.println("Enhorabuena, has aprobado con un 5");
       } else {
-        System.out.println("Estas suspenso");
+        System.out.println("Estas suspenso con un "+media);
       }
     } else {
-      System.out.println("Enhorabuena has aprobado");
+      System.out.println("Enhorabuena has aprobado con un "+media);
     }
     sc.close();
   }
