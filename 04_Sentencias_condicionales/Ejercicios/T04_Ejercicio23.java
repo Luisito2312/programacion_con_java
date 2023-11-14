@@ -54,6 +54,10 @@ public class T04_Ejercicio23 {
         System.out.println("Has introducido un codigo promocional erróneo");
         break;
     }
-    System.out.println();
+
+    Double iva = precio * (porcentajeiva / 100);
+
+    System.out.printf("Base imponible  %8d\n" , precio);
+    System.out.printf("IVA "+porcentajeiva+"  %8d\n" , iva);
   }
 }
