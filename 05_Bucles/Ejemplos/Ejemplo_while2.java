@@ -20,7 +20,7 @@ public class Ejemplo_while2 {
       num = sc.nextInt();
       i++;
     }
-    System.out.println("Ha introducido un número real");
+    System.out.println("Ha introducido un número que no es entero");
     System.out.println("En total ha introducido "+i+ " números positivos");
 
     sc.close();
