@@ -9,8 +9,8 @@ public class T05_Ejercicio08 {
     int num = sc.nextInt();
 
     for (int i = 0; i < 11; i++) {
-      System.out.println(num + " x " + i + " = "+ (num * i) );
-    }
+      System.out.printf("%2d x %2d = %3d\n", num , i , (num*i));
+    } 
     sc.close();
   }
 }
