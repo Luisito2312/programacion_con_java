@@ -18,5 +18,6 @@ public class Ejemplo_dowhile2 {
     } while (num % 2 == 0);
 
     System.out.println("Ha introducido un número impar");
+    sc.close();
   }
 }
