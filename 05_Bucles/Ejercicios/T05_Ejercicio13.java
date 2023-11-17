@@ -1,3 +1,9 @@
+/*
+ Escribe un programa que lea una lista de diez números y determine cuántos
+son positivos, y cuántos son negativos.
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T05_Ejercicio13 {

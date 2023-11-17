@@ -1,3 +1,8 @@
+/*
+ Muestra la tabla de multiplicar de un número introducido por teclado.
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T05_Ejercicio08 {

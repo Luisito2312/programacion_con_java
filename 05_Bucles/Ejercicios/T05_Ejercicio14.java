@@ -1,3 +1,9 @@
+/*
+ Escribe un programa que pida una base y un exponente (entero positivo) y que
+calcule la potencia.
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T05_Ejercicio14 {
