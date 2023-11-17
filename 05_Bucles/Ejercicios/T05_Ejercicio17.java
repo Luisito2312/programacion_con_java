@@ -8,15 +8,15 @@ public class T05_Ejercicio17 {
     System.out.println("Introduce un número");
     int n = sc.nextInt();
 
-    int x = 100;
-    int j = 0;
-    int m = 
+    int j = n;
+    int x = n+100;
 
-    for (int i = n; j <= x; x--) {
-     n =+ i;
+    for (int i = n; i <= x; i++) {
 
-     System.out.println(n);
+     n = n + i;
+
     }
-    
+    System.out.println(n-j);
+    sc.close();
   }
 }
