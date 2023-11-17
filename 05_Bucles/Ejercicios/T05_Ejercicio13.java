@@ -19,8 +19,10 @@ public class T05_Ejercicio13 {
 
       if (n > 0) {
         j++;
-      } else {
+      } else if (n < 0){
         k++;
+      } else {
+        continue;
       }
     }
 
