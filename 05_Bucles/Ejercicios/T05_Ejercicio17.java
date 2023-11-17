@@ -12,8 +12,12 @@ public class T05_Ejercicio17 {
     
     Scanner sc = new Scanner(System.in);
 
-    System.out.println("Introduce un número entero y positivo");
-    int n = sc.nextInt();
+    int n;
+    do {
+       System.out.println("Introduce un número entero y positivo");
+       n = sc.nextInt();
+    } while (n <= 0);
+   
 
     int j = n;
     int x = n+100;
