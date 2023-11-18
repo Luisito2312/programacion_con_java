@@ -15,7 +15,7 @@ public class T05_Ejercicio16 {
     int res = 0;
     int j = 0;
 
-    System.out.println("Introduce un númeo para ver si es primo o no");
+    System.out.println("Introduce un número para ver si es primo o no");
     int n = sc.nextInt();
 
 
