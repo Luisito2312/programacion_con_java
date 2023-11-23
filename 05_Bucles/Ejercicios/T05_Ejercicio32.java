@@ -8,7 +8,6 @@ public class T05_Ejercicio32 {
     int i = 0;
     long NumeroVolteado = 0;
     int npares = 0;
-    int nimpares = 0;
     int NumeroDeCifras = 0;
     int digito = 0;
     
@@ -16,6 +15,7 @@ public class T05_Ejercicio32 {
     System.out.print("Introduce un número entero y positivo");
     int n = sc.nextInt();
     int Copian = Math.abs(n);
+    sc.close();
 
     while (Copian > 0) {
       NumeroVolteado = (Copian % 10) + (NumeroVolteado * 10);
