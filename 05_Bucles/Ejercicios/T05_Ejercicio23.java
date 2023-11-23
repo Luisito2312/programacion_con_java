@@ -12,7 +12,12 @@ public class T05_Ejercicio23 {
       System.out.println("Introduce un número para sumar");
       int n = sc.nextInt();
 
-      suma =+ n; 
+      suma =+ n;
+
+      if (suma >=10000) {
+        System.out.println("El número introducido supera el límite");
+      }
+      
     }
     int media = suma / i;
 

@@ -16,18 +16,18 @@ public class T04_Ejercicio23 {
     String tipodesc = sc.nextLine();
 
     //Calculamos el IVA y el precio antes de usar coddigo promocional
-    int porcentajeiva = 0;
+    Double porcentajeiva = 0.;
     switch (tipoiva) {
       case "general":
-        porcentajeiva = 21;
+        porcentajeiva = 0.21;
         break;
       
       case "reducido":
-        porcentajeiva = 10;
+        porcentajeiva = 0.10;
         break;
        
       case "superreducido":
-        porcentajeiva = 4;
+        porcentajeiva = 0.4;
       default:
         break;
     }
@@ -55,7 +55,7 @@ public class T04_Ejercicio23 {
         break;
     }
 
-    Double iva = precio * (porcentajeiva / 100);
+    Double iva = precio * porcentajeiva;
 
     System.out.printf("Base imponible  %8d\n" , precio);
     System.out.printf("IVA "+porcentajeiva+"  %8d\n" , iva);
