@@ -19,5 +19,13 @@ public class Ejemplo_dowhile2 {
 
     System.out.println("Ha introducido un número impar");
     sc.close();
+
+    try {
+      
+    } catch (Exception e) {
+      // TODO: handle exception
+    }
+
+    
   }
 }

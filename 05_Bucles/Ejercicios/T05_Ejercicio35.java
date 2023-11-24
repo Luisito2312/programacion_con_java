@@ -1,3 +1,8 @@
+/*
+ Explica tu código aquí
+ * 
+ * @author Luis Godino
+ */
 import java.util.Scanner;
 
 public class T05_Ejercicio35 {
@@ -15,5 +20,6 @@ public class T05_Ejercicio35 {
         System.out.print(" ");
       }
     }
+    sc.close();
   }
 }

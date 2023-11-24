@@ -1,3 +1,8 @@
+/*
+ Muestra por pantalla todos los números primos entre 2 y 100, ambos incluidos.
+ * 
+ * @author Luis Godino
+ */
 public class T05_Ejercicio22 {
   public static void main(String[] args) {
     
