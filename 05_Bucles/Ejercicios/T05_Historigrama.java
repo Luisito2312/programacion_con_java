@@ -11,16 +11,16 @@ public class T05_Historigrama {
     
     Scanner sc = new Scanner(System.in);
 
-    int n = 1;
-
     System.out.println("Introduce un carácter");
     String caracter = sc.nextLine();
 
-    for (int i = 0; n > 0; i++) {
-      System.out.println("Introduce un número");
+    System.out.println("Introduce un número");
+    
+    for (int n = 1; n > 0;) {
+      
       n = sc.nextInt();
       for (int j = 0; j < 1; j++) {
-        System.out.print(n+ " | ");
+        System.out.print(" | ");
         for (int j2 = 0; j2 < n; j2++) {
           System.out.print(caracter);
           
