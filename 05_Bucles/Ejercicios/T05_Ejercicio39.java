@@ -17,5 +17,6 @@ public class T05_Ejercicio39 {
       System.out.println(i+"! = "+resltado);
       
     }
+    sc.close();
   }
 }
