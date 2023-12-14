@@ -1,27 +1,24 @@
-import java.util.Scanner;
 public class numeroprimo {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+    System.out.print("Introduzca un número entero y le diré si es primo: ");
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
 
-    int res = 0;
-    int j = 0;
-
-    System.out.println("Introduce un número para ver si es primo o no");
-    int n = sc.nextInt();
-
-
-    for (int i = 1; i <= n; i++) {
-      res = n % i;
-      if (res == 0) {
-        j++;
+    boolean esPrimo = true;
+    
+    for (int i = 2; i < numeroIntroducido; i++) {
+      if ((numeroIntroducido % i) == 0) {
+        esPrimo = false;
       }
     }
-
-    if (j == 2){
-      System.out.println("El número es primo");
+        
+    if (esPrimo) {
+      System.out.println("El número introducido es primo.");
     } else {
-      System.out.println("El número no es primo");
+      System.out.println("El número introducido no es primo.");
     }
-    sc.close();
+
+    // El if anterior se puede abreviar de esta otra manera.
+    // Descomenta para probarlo.
+    // System.out.println("El número introducido" + (esPrimo ? "" : " no") + " es primo.");
   }
 }
