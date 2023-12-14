@@ -1,4 +1,5 @@
 import matematicas.varias;
+import matematicas.volumen;
 
 public class PruebaFunciones {
   public static void main(String[] args) {
@@ -21,5 +22,17 @@ public class PruebaFunciones {
   int numDigitos = varias.digitos(n);
 
   System.out.println("El número "+ n + " tiene " + numDigitos + " digitos");
+
+  //Ahora el del volumen
+  double r;
+  double h;
+
+  System.out.println("Introduce el radio");
+  r = Double.parseDouble(System.console().readLine());
+
+  System.out.println("Introduzca la altura");
+  h = Double.parseDouble(System.console().readLine());
+
+  System.out.println("El volumen del cilindro es "+ volumen.volumenCilindro(r, h));
   }
 }
