@@ -1,7 +1,7 @@
 import matematicas.varias;
 
 public class PruebaFunciones {
-public static void main(String[] args) {
+  public static void main(String[] args) {
   int n;
 
   //Probamos la funcion es primo alojada en la clase "varias" dentro del paquete "Matematicas"
@@ -13,5 +13,13 @@ public static void main(String[] args) {
   } else {
     System.out.println("El número no es primo");
   }
-}
+
+  //Prueba funcion digitos
+  System.out.println("Introduce un número entero positivo");
+  n = Integer.parseInt(System.console().readLine());
+
+  int numDigitos = varias.digitos(n);
+
+  System.out.println("El número "+ n + " tiene " + numDigitos + " digitos");
+  }
 }
