@@ -28,9 +28,5 @@ public class T05_Ejercicio34 {
     int num2 = sc.nextInt();
     int Copianum2 = Math.abs(num2);
 
-    while () {
-      
-    }
-
   }
 }
