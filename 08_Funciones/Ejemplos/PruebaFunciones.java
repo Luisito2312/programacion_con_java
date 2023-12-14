@@ -23,7 +23,7 @@ public class PruebaFunciones {
 
   System.out.println("El número "+ n + " tiene " + numDigitos + " digitos");
 
-  //Ahora el del volumen
+  //Ahora el del volumen que también hemos añadido a la clase matematicas. le pasamos las dos variables "r" "h"
   double r;
   double h;
 
