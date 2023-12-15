@@ -39,4 +39,23 @@ public class varias {
       return n;
     }
   }
+    
+    /** 
+     * Función que sirve para voltear números, positivos y negativos. 
+     * @param x (Parámetro de entrada) tiene que ser de tipo long
+     * @return long este es el número volteado
+     */
+  
+    public static long voltearNum(long x) {
+      if (x < 0) {
+         return voltearNum(-x);
+      }
+      long numeroVolteado = 0;
+       while (x > 0) {
+        numeroVolteado = (numeroVolteado * 10) + (x % 10);
+        x /= 10;
+      }
+      return numeroVolteado;
+  
+}
 }

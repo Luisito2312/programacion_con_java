@@ -1,5 +1,6 @@
 import matematicas.varias;
 import matematicas.volumen;
+import java.util.Scanner;
 
 public class PruebaFunciones {
   public static void main(String[] args) {
@@ -34,5 +35,16 @@ public class PruebaFunciones {
   h = Double.parseDouble(System.console().readLine());
 
   System.out.println("El volumen del cilindro es "+ volumen.volumenCilindro(r, h));
+
+  //Probamos la funcion de darle la vuelta a un numero
+Scanner sc = new Scanner(System.in);
+
+  System.out.println("Introduce un número");
+  long j = sc.nextLong();
+
+  sc.close();
+
+  System.out.println("El número volteado es "+ varias.voltearNum(j));
+
   }
 }
