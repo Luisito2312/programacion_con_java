@@ -46,31 +46,24 @@ public class varias {
      * @return long este es el número volteado
      */
   
-    public static long voltea(long x) {
+    public static int voltea(int x) {
       if (x < 0) {
          return voltea(-x);
       }
-      long numeroVolteado = 0;
+      int numeroVolteado = 0;
        while (x > 0) {
         numeroVolteado = (numeroVolteado * 10) + (x % 10);
         x /= 10;
       }
-      System.out.println("Esta es la función que devuelve un long");
       return numeroVolteado;
     }
     
-    public static int voltea(int x) {
-      System.out.println("Esta es la funcion que devuelve un entero");
-      return (int) voltea((long)x);
-    }
 
-    public static boolean esCapicua(long x){
+    public static boolean esCapicua(int x){
       return x == voltea(x);
     }
 
-    public static boolean esCapicua(int x){
-      return esCapicua((long)x);
-    }
+
 
     public static int siguientePrimo(int x){
       do {
@@ -89,9 +82,16 @@ public class varias {
         }
 
         public static int digitoN(int x, int n){
-          for (int i = 0; i < n; i++) {
-            
+          x = voltea(x);
+          int ayuda = 0;
+          int aux = 0;
+          for (int i = -1; i < n ; i++) {
+            aux = x % 10;
+            x = x / 10;
+            ayuda = 0;
+            ayuda = aux;  
           }
+          return ayuda;
         }
       }
     

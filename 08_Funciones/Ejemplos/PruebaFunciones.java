@@ -2,6 +2,8 @@ import matematicas.varias;
 import matematicas.volumen;
 import java.util.Scanner;
 
+import javax.sql.rowset.spi.SyncResolver;
+
 public class PruebaFunciones {
   public static void main(String[] args) {
   int n;
@@ -62,10 +64,7 @@ Scanner sc = new Scanner(System.in);
   } else {
     System.out.println("El número no es capicuo");
   }
-
-
-  System.out.println("Inroduce un número para determinar cual es el siguiente primo");
-  int x = Integer.parseInt(System.console().readLine());
-  
   }
+
+  
 }
