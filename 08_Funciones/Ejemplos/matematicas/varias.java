@@ -93,6 +93,10 @@ public class varias {
           }
           return ayuda;
         }
+
+        public static int posicionDeDigito(int x, int n){
+            
+          }
       }
     
 
