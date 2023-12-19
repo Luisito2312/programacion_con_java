@@ -45,7 +45,7 @@ Scanner sc = new Scanner(System.in);
   long j = sc.nextLong();
 
 
-  System.out.println("El número volteado es "+ varias.voltea(j));
+  //System.out.println("El número volteado es "+ varias.voltea(j));
 
   //Prueba funcion voltea(int)
   Scanner scanner = new Scanner(System.in);
@@ -59,12 +59,12 @@ Scanner sc = new Scanner(System.in);
   //escapicua
   System.out.println("Introduce un numero para ver si es capicuo");
   long k = Long.parseLong(System.console().readLine());
-  if (esCapicua(k)) {
-    System.out.println("El número es capicuo");
-  } else {
-    System.out.println("El número no es capicuo");
+ // if (esCapicua(k)) {
+   // System.out.println("El número es capicuo");
+  //} else {
+   // System.out.println("El número no es capicuo");
   }
   }
 
   
-}
+
