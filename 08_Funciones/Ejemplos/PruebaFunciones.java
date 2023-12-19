@@ -42,9 +42,30 @@ Scanner sc = new Scanner(System.in);
   System.out.println("Introduce un número");
   long j = sc.nextLong();
 
-  sc.close();
 
-  System.out.println("El número volteado es "+ varias.voltearNum(j));
+  System.out.println("El número volteado es "+ varias.voltea(j));
 
+  //Prueba funcion voltea(int)
+  Scanner scanner = new Scanner(System.in);
+
+  System.out.println("Introduce un número");
+  int y = sc.nextInt();
+
+
+  System.out.println("El número volteado es "+ varias.voltea(y));
+
+  //escapicua
+  System.out.println("Introduce un numero para ver si es capicuo");
+  long k = Long.parseLong(System.console().readLine());
+  if (esCapicua(k)) {
+    System.out.println("El número es capicuo");
+  } else {
+    System.out.println("El número no es capicuo");
+  }
+
+
+  System.out.println("Inroduce un número para determinar cual es el siguiente primo");
+  int x = Integer.parseInt(System.console().readLine());
+  
   }
 }
