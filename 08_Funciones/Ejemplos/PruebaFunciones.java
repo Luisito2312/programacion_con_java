@@ -2,8 +2,6 @@ import matematicas.varias;
 import matematicas.volumen;
 import java.util.Scanner;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class PruebaFunciones {
   public static void main(String[] args) {
   int n;
@@ -42,7 +40,7 @@ public class PruebaFunciones {
 Scanner sc = new Scanner(System.in);
 
   System.out.println("Introduce un número");
-  long j = sc.nextLong();
+  //long j = sc.nextLong();
 
 
   //System.out.println("El número volteado es "+ varias.voltea(j));
@@ -55,16 +53,11 @@ Scanner sc = new Scanner(System.in);
 
 
   System.out.println("El número volteado es "+ varias.voltea(y));
-
-  //escapicua
-  System.out.println("Introduce un numero para ver si es capicuo");
-  long k = Long.parseLong(System.console().readLine());
- // if (esCapicua(k)) {
-   // System.out.println("El número es capicuo");
-  //} else {
-   // System.out.println("El número no es capicuo");
-  }
-  }
+scanner.close();
+sc.close();
+  
+}
+}
 
   
 

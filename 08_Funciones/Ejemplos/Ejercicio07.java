@@ -14,6 +14,7 @@ public class Ejercicio07 {
   int n = sc.nextInt();
 
   System.out.println("El número que se encuentra en la posición indicada es: "+ varias.digitoN(x, n));
+  sc.close();
   }
 
   
