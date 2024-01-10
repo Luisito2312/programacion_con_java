@@ -13,7 +13,7 @@ public class T07_Ejercicio01 {
       if (numero[i] < minimo) {
         minimo = numero[i];
       }
-    }
+    
     
     for (int i = 0; i < numero.length; i++) {
       System.out.print(numero[i] + " ");
