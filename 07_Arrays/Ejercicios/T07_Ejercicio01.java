@@ -6,6 +6,7 @@ public class T07_Ejercicio01 {
     int maximo = Integer.MIN_VALUE;
     int minimo = Integer.MAX_VALUE;
 
+    for (int i = 0; i < numero.length; i++) {
       if (numero[i] > maximo) {
         maximo = numero[i];
       }
@@ -13,6 +14,8 @@ public class T07_Ejercicio01 {
       if (numero[i] < minimo) {
         minimo = numero[i];
       }
+    }
+      
     
     
     for (int i = 0; i < numero.length; i++) {
