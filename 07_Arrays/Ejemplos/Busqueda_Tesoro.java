@@ -49,7 +49,7 @@ public class Busqueda_Tesoro {
         System.out.print(i + " |");
         for (int j = 0; j < tablero[i].length; j++) {
           if (tablero[i][j] == JUGADA) {
-            System.out.printf("%2s","u416");
+            System.out.printf("%2s","\u0416");
           } else {
             System.out.printf("%2s"," ");
           }
