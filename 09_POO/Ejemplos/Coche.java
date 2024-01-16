@@ -20,6 +20,8 @@ public class Coche {
 
     System.out.println("Matricula del coche 1: "+ miCoche.matricula);
     System.out.println("La potencia del coche 2 es: " + tuCoche.potencia);
+    System.out.println("Matricula del coche 2: "+ miCoche.matricula);
+    System.out.println("La potencia del coche 1 es: " + tuCoche.potencia);
 
   }
 }
