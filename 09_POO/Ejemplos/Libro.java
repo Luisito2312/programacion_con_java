@@ -11,6 +11,6 @@ public class Libro {
   String editorial;
   String isbn;
   int numPaginas;
-  private int edicion = 1;
+  int edicion = 1;
   
 }
