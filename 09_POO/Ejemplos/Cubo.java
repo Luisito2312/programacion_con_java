@@ -1,43 +1,43 @@
 public class Cubo {
   /////Atributos
-  int capacidad; //Capacidad máxima en litros
-  int contenido; //Capacidad actual en litros
+ private int capacidad; //Capacidad máxima en litros
+ private int contenido; //Capacidad actual en litros
 
 
 
   ////Constructor
-  Cubo (int cap){
+  public Cubo (int cap){
     this.capacidad = cap;
   }
 
   /////Getters
-  int getCapacidad(){
+  public int getCapacidad(){
     return this.capacidad;
   }
 
-  int getContenido(){
+  public int getContenido(){
     return this.contenido;
   }
 
 
   /////Setters
-  void setContenido(int litros){
+  public void setContenido(int litros){
     this.contenido = litros;
   }
 
 
   /////Otros métodos
-  void vacia(){
+  public void vacia(){
     this.contenido = 0;
     System.out.println("Sa vaciao");
   }
 
-  void llena(){
+  public void llena(){
     this.contenido = this.capacidad;
     System.out.println("Sa llenao");
   }
 
-  void pinta() {
+  public void pinta() {
     for (int nivel = this.capacidad; nivel > 0; nivel--) {
     if (this.contenido >= nivel) {
     System.out.println("#~~~~#");
@@ -47,4 +47,22 @@ public class Cubo {
     }
     System.out.println("######");
     }
+
+  /**
+* Vuelca el contenido de un cubo sobre otro.
+* Antes de echar el agua se comprueba cuánto le cabe al
+* cubo destino.
+*/
+  void vuelcaEn(Cubo destino) {
+   int libres = destino.getCapacidad() - destino.getContenido();
+    if (libres > 0) {
+      if (this.contenido <= libres) {
+        destino.setContenido(destino.getContenido() + this.contenido);
+        this.vacia();
+    } else {
+        this.contenido -= libres;
+        destino.llena();
+    }
+   }
+  }
 }
