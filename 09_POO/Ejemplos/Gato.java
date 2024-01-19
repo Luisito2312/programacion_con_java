@@ -11,6 +11,8 @@ public class Gato {
   //Constructores
   Gato(String nombre){
     this.nombre = nombre;
+    this.color = "Azul";
+    this.raza = "Romano";
   }
 
   Gato(String nombre, String color, String raza, String sexo, int edad, double peso){
