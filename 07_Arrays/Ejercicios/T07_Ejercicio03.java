@@ -10,8 +10,8 @@ public class T07_Ejercicio03 {
       num[i] = Integer.parseInt(System.console().readLine());
     }
 
-    for (int i = 9; i  <= (num.length - 2); i--) {
-      System.out.println(num[i]);
+    for (int i = 9; i  >= 0; i--) {
+      System.out.print(" " + num[i]);
     }
   }
 }
