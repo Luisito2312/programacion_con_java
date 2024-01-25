@@ -1,7 +1,10 @@
+// package SieteYMedia;
+
 /**
  * Clase Cartas para el juego de las Siete y Media
  * @author Elías Robles
  */
+
 public class Carta { 
 
   // Atributos de las cartas
@@ -22,10 +25,10 @@ public class Carta {
 
   // Getter (para pruebas)
   public String getValores() {
-    return "Palo: " + this.palo + ", Numero: " + this.numero + ", Valor: " + this.valor;
+    return this.numero + " de " + this.palo + ", Valor: " + this.valor;
   }
 
-  // Método auxiliar para asignar valores
+  // Método para asignar valores
   private static double asignarValor(String numero) {
     switch (numero) {
       case "1":

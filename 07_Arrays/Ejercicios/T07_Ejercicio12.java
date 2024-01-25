@@ -21,18 +21,40 @@ public class T07_Ejercicio12 {
       System.out.printf("%5s   |",numeros[i]);
     }
 
-    System.out.println("Introduzca la posición inicial");
+    boolean continuar;
+    do {
+      continuar = true;
+      System.out.println("\nIntroduzca la posición inicial");
     indiceInicial = Integer.parseInt(System.console().readLine());
 
     System.out.println("Introduzca la posición final");
     indiceFinal = Integer.parseInt(System.console().readLine());
 
-    aux = indiceInicial;
-    numeros[indiceInicial] = numeros[indiceFinal];
-    numeros[indiceFinal] = numeros[aux];
+    if (indiceFinal < indiceInicial) {
+      System.out.println("Incorrecto, el numero inicial tiene que ser menor que el final");
+      continuar = false;
+    }
 
-    for (int i = 9; i < indiceFinal; i--) {
-      numeros[i] = numeros[i-1];
+    if ((indiceFinal < 0) || (indiceFinal > 9) || (indiceInicial < 0) || (indiceInicial > 9)) {
+      System.out.println("Debes introducir un número entre (0-9)");
+      continuar = false;
+    }
+    } while (!continuar);
+    
+    int[] copiaNumeros = new int[10];
+    for (int i = 0; i < copiaNumeros.length; i++) {
+      copiaNumeros[i] = numeros[i];
+    }
+
+    copiaNumeros[indiceFinal] = numeros[indiceInicial];
+    copiaNumeros[indiceInicial] = numeros[indiceFinal];
+
+    for (int i = 0; i < indiceInicial; i++) {
+      copiaNumeros[i] = numeros[i+1];
+    }
+
+    for (int i = indiceFinal; i < copiaNumeros.length; i++) {
+      copiaNumeros[i] = numeros[i];
     }
 
     System.out.print("Indice ");
