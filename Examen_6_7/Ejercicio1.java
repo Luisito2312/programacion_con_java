@@ -27,12 +27,12 @@ public class Ejercicio1 {
   do {
     intervaloInicialIa = (int)(Math.random()*intervaloFinal) + intervaloInicial;
     intervaloFinalIa = (int)(Math.random()*intervaloFinal) + intervaloInicial;
-  } while ((intervaloInicialIa >=  intervaloFinalIa) && ((intervaloInicialIa < intervaloInicial) || (intervaloFinalIa > intervaloFinal )));
+  } while ((intervaloInicialIa >=  intervaloFinalIa) && ((intervaloInicialIa < intervaloInicial) && (intervaloFinalIa > intervaloFinal )));
 
   int intentos = (int)(Math.log(intervaloFinalIa-intervaloInicialIa+1) / Math.log(2));
 
   do {
-    numeroAdivinar = (int)(Math.random()* intervaloFinalIa + intervaloInicialIa);
+    numeroAdivinar = (int)((Math.random()* intervaloFinalIa) + intervaloInicialIa);
   } while ((numeroAdivinar < intervaloInicialIa) || (numeroAdivinar > intervaloFinalIa));
  
 

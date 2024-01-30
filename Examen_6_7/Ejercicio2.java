@@ -40,8 +40,9 @@ public class Ejercicio2 {
     } else {
 
       for (int i = 0; i < tabla.length; i++) {
-        for (int j = 0; j < tabla.length; j++) {
-          System.out.println(tabla[i][j]);
+        System.out.println(" ");
+        for (int j = 0; j < tabla[0].length; j++) {
+          System.out.printf("%5s " ,tabla[i][j]);
         }
       }
     }
