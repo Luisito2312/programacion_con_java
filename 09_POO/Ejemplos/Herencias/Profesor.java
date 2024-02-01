@@ -11,7 +11,7 @@ public class Profesor extends Personas {
   private double sueldo;
 
   /////Constructores
-  public Profesor(String nombre, int edad, String dni) {
+  public Profesor(String nombre, int edad, String dni, String departamento, double sueldo) {
     super(nombre, edad, dni);
     this.departamento = departamento;
     this.sueldo = sueldo;
@@ -24,5 +24,10 @@ public class Profesor extends Personas {
 
   public double getSueldo() {
     return sueldo;
+  }
+
+  @Override
+  public String toString() {
+    return super.toString() + "[Profesor] Departamento: "+ departamento;
   }
 }

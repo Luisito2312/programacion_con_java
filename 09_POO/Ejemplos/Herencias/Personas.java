@@ -5,6 +5,8 @@ Aqui creo la clases personas para ver la herencia en programacion orientada a ob
  */
 public class Personas {
   
+  
+
   /////Atributos
   private String nombre;
   private int edad;
@@ -33,8 +35,14 @@ public class Personas {
     return this.dni;
   }
 
+  @Override
+  public String toString() {
+    return " Nombre=" + nombre + "\tEdad=" + edad + "\tDNI=" + dni ;
+  }
+
   public void mostrarDatos(){
     System.out.println("Nombre: "+ nombre + "\tEdad: " + edad + "\tDNI: " +dni);
   }
   
+ 
 }

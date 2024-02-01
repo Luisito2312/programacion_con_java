@@ -25,9 +25,17 @@ public class Estudiante extends Personas {
     return this.creditos;
   }
 
+  @Override
+  public String toString() {
+    return super.toString() + "[Estudiante] Créditos: "+ creditos;
+  }
+
+  @Override
   public void mostrarDatos() {
     super.mostrarDatos();
     System.out.println("Estudiante matriculado en: "+creditos+" creditos.");
 
   }
+
+  
 }
