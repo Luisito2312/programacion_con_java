@@ -6,25 +6,22 @@
 public class Coche {
 
   //Atributos
-  String matricula;
-  String marca;
-  String modelo;
-  int puertas;
-  String color;
-  int potencia;
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private int kilometraje;
+ 
+  //////Constructor
+  public Coche(String matricula, String marca, String modelo) {
+    this.matricula = matricula;
+    this.marca = marca;
+    this.modelo = modelo;
+    this.kilometraje = 0;
+  }
 
-  public static void main(String[] args) {
-    //formula : Nombre_clase nombre_objeto = new Nombre_Clase() 
-    Coche miCoche = new Coche(); //Coche 1
-    Coche tuCoche = new Coche(); //Coche 2
-
-
-    miCoche.matricula = "1234ACB";
-
-    System.out.println("Matricula del coche 1: "+ miCoche.matricula);
-    System.out.println("La potencia del coche 2 es: " + tuCoche.potencia);
-    System.out.println("Matricula del coche 2: "+ tuCoche.matricula);
-    System.out.println("La potencia del coche 1 es: " + miCoche.potencia);
+  ////Getter
+  public int getKilometraje() {
+    return this.kilometraje;
+  }
 
   }
-}
