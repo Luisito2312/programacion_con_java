@@ -25,7 +25,5 @@ public abstract class Vehiculo {
   //Metodos de clase
   public static int getKilometrosTotales(){
     return kilometrosTotales;
-
-  
   }
 }
