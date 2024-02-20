@@ -3,6 +3,8 @@ public class Alumno {
   private String nombre;
   private double notaMedia = 0.0;
 
+
+  
   public String getNombre() {
     return nombre;
   }

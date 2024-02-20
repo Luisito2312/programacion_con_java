@@ -6,6 +6,7 @@
  */
 
 public class Jugador {
+  
   private double saldo;
   
   

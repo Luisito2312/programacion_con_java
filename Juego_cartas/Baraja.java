@@ -42,6 +42,10 @@ public class Baraja {
     this.posCartas = 0;
   }
 
+  // public Carta[] repartirCarta(){
+    
+  // }
+
   public static void main(String[] args) {
     Baraja baraja = new Baraja();
     baraja.barajarCartas();
@@ -59,5 +63,7 @@ public class Baraja {
     for (int i = 0; i < 40; i++) {
       System.out.println(baraja.getCartas()[i].getValores());
     }
+
+
   }
 }
