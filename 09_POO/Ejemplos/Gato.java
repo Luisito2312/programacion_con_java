@@ -33,6 +33,10 @@ public class Gato {
     System.out.println("Brrrrrrrr");
   }
 
+  public String getNombre(){
+    return this.nombre;
+  }
+
   void come(String comida){
     if (comida.equalsIgnoreCase("pescado")) {
       System.out.println("Ñam Ñam");
@@ -49,4 +53,7 @@ public class Gato {
     }
   }
   
+  public int compareTo(Gato g){
+    return(this.nombre).compareTo(g.getNombre());
+  }
 }
