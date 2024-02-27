@@ -28,6 +28,10 @@ public class Carta {
     return this.numero + " de " + this.palo + ", Valor: " + this.valor;
   }
 
+  public double getValor() {
+    return this.valor;
+  }
+
   // Método para asignar valores
   private static double asignarValor(String numero) {
     switch (numero) {

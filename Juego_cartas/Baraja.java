@@ -8,13 +8,14 @@
 public class Baraja {
 
   // Atributos
-  private Carta[] cartas;
-  private int posCartas;
+  public static Carta[] cartas;
+  public static int posCartas;
+  public int length = 40;
 
   // Constructor
   public Baraja() {
-    this.posCartas = 0;
-    this.cartas = Carta.inicializarCartas();
+    Baraja.posCartas = 0;
+    Baraja.cartas = Carta.inicializarCartas();
   }
 
   // Método para barajar las cartas
@@ -40,11 +41,21 @@ public class Baraja {
   public void resetearBaraja() {
     this.cartas = Carta.inicializarCartas();
     this.posCartas = 0;
+    posCartas = 0;
   }
 
-  // public Carta[] repartirCarta(){
-    
-  // }
+  // Método para sacar una carta de la baraja
+  // Índice 0 sacas carta
+  public static Carta sacarCarta() {
+    if (posCartas < cartas.length) {
+      Carta carta = cartas[posCartas];
+      posCartas++;
+      return carta;
+    } else {
+      System.out.println("No hay más cartas en la baraja.");
+      return null;
+    }
+  }
 
   public static void main(String[] args) {
     Baraja baraja = new Baraja();
@@ -64,6 +75,11 @@ public class Baraja {
       System.out.println(baraja.getCartas()[i].getValores());
     }
 
-
+    // Sacar una carta
+    System.out.println("\nCarta sacada de la baraja:\n");
+    Carta cartaSacada = Baraja.sacarCarta();
+    if (cartaSacada != null) {
+      System.out.println(cartaSacada.getValores());
+    }
   }
 }
