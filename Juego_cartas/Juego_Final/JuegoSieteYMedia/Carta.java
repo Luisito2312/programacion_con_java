@@ -3,9 +3,10 @@
 /**
  * Clase Cartas para el juego de las Siete y Media
  * @author Elías Robles
+ * @author Luis Godino
  */
 
- public class Carta { 
+public class Carta { 
 
   // Atributos de las cartas
   private String palo;  // Palo en el que se encuentra una carta de X número

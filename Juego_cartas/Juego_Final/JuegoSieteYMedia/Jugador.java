@@ -5,7 +5,6 @@ public class Jugador {
   public int posMano;
   private double valorMano;
   private String nombre;
-  private boolean victoria;
 
   // Constructor de Jugador
   public Jugador() {
