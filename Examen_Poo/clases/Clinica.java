@@ -1,72 +1,71 @@
 package clases;
 
-import java.util.ArrayList;
-
 public class Clinica {
-  ArrayList<Mascota> a = new ArrayList<Mascota>();
+  ///Atributos
+  final int n = 100;
+  private Mascota[] listado;
 
-  public boolean esVacia(){
-    boolean vacia;
-    int aux = 0;
-    for (Mascota mascota : a) {
-      if ( mascota == null ) {
-        aux++;
+
+  //Constructor
+  public Clinica(){
+    listado = new Mascota[n];
+  }
+
+  //Métodos
+  public boolean esVacia() { //La funcion recorre el array y si encuentra un hueco que tenga una mascota, devuelve falso
+    for (int i = 0; i < listado.length; i++) {
+      if (listado[i] != null) {
+        return false;
       }
     }
-
-    if (aux == 100) {
-      vacia = true;
-    } else {
-      vacia = false;
-    }
-    return vacia;
+    return true;
   }
 
-  public boolean esLlena(){
-    boolean llena;
-    int aux = 0;
-    for (Mascota mascota : a) {
-      if (mascota == null) {
-        aux++;
+  public boolean esLlena() { //La funcion recorre el array y si encuentra un hueco que tiene mascota devuelve true
+    for (int i = 0; i < listado.length; i++) {
+      if (listado[i] == null) {
+        return false;
       }
     }
-    if (aux == 100) {
-      llena = false;
-    } else {
-      llena = false;
-    }
-    return llena;
+    return true;
   }
 
-  public void agregar(Mascota mascota){
-    for (Mascota animal : a) {
-      if (animal == null) {
-        a.add(mascota);
+  public int totalPerros() {
+    return Perro.getTotalPerros();
+  }
+
+  public int totalGatos() {
+    return Gato.getTotalGatos();
+  }
+
+  public int totalMascotas() {
+    return Mascota.getTotalMascotas();
+  }
+
+  public Mascota buscarChip(String chip) { //Recorre el array y si coincide devuelve la mascota, si no devuelve null
+    for (int i = 0; i < listado.length; i++) {
+      if ((listado[i] != null) && (listado[i].getChip().equals(chip))) {
+        return listado[i];
       }
     }
-    Mascota.totalMascotas++;
+    return null;
   }
 
-  public Mascota buscarChip(String chip){
-    Mascota b = new Mascota();
-    for (Mascota mascota : a) {
-      if (mascota.getChip() == chip) {
-        b = mascota;
-      } else {
-        b = null;
+  public void agregar(Mascota mascota) {
+    int primeraLibre = -1;
+    do {
+      primeraLibre++;
+    } while (listado[primeraLibre] != null);
+
+    listado[primeraLibre] = mascota;
+  }
+
+  public void listar() {
+    for (int i = 0; i < listado.length; i++) {
+      if (listado[i] != null) {
+        System.out.println(listado[i].toString());
       }
     }
-    return b;
   }
-
-  public String listar(){
-    for (Mascota mascota : a) {
-      return mascota.toString();
-    }
-  }
-
-  public int totalPerros(){
-
-  }
-  }
+}
 

@@ -2,58 +2,60 @@ package clases;
 
 public class Perro extends Mascota{
   
-  String raza;
-  public static int totalPerros;
+  //Atributos
+  private String raza;
+  
+
+  private static int totalPerros = 0;
 
   //Constructores
   public Perro(String chip) {
-    super();
-    this.chip = chip;
+    super(chip);
+    totalPerros++;
   }
 
   public Perro(String chip, String nombre) {
-    super();
-    this.chip = chip;
-    this.nombre = nombre;
+    super(chip, nombre);
+    totalPerros++;
   }
 
-  
-  //Getters y setters
+  //getter
+  public static int getTotalPerros() {
+    return totalPerros;
+  }
+
   public String getRaza() {
     return raza;
   }
-
+  //Setters
   public void setRaza(String raza) {
     this.raza = raza;
   }
-
-  public void setEdad(int edad){
-    this.edad = edad;
-  }
-
   //Métodos
   public void ladrar(){
     System.out.println("Guau, Guau");
   }
   
-  public void gruñir(){
+  public void grunir(){
     System.out.println("Grrrr...");
   }
 
-  public void pasear(Boolean vacunada, String nombre){
-    if (!this.vacunada) {
-      System.out.println(nombre+" no puede pasear hasta no estar vacunado/a");
+  @Override
+  public void pasear(){
+    if (!vacunada) {
+      System.out.println(this.getNombre()+" no puede pasear hasta no estar vacunado/a");
     } else if (this.vacunada) {
       ladrar();
     }
   }
 
-  public void vacunar(boolean vacunada, String nombre){
+  @Override
+  public void vacunar(){
     if (this.vacunada) {
-      System.out.println(nombre+" ya está vacunado/a");
+      System.out.println(this.getNombre()+" ya está vacunado/a");
     } else if (!this.vacunada) {
-      vacunada = true;
-      gruñir();
+      super.vacunar();
+      grunir();
 
     }
   }

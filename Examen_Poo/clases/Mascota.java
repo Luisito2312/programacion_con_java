@@ -1,21 +1,30 @@
 package clases;
 
-public class Mascota implements MascotaInterface{
+public abstract class Mascota implements MascotaInterface{
   
   ////Atributos
-  public String chip;
-  public String nombre;
-  public int edad;
-  public boolean vacunada;
-  public static int totalMascotas;
+  protected String chip;
+  protected String nombre;
+  protected int edad;
+  protected boolean vacunada;
+  private static int totalMascotas = 0;
 
-  
-  //Getters
-  public String getChip() {
-    return chip;
+  //Constructores
+  public Mascota(String chip){
+    this.chip = chip;
+    this.vacunada = false;
+    totalMascotas++;
   }
 
-  public String getNombre() {
+  public Mascota(String chip, String nombre){
+    this.chip = chip;
+    this.nombre = nombre;
+    this.vacunada = false;
+    totalMascotas++;
+  }
+
+  //getters y setters
+  public String getNombre(){
     return nombre;
   }
 
@@ -23,19 +32,29 @@ public class Mascota implements MascotaInterface{
     return edad;
   }
 
-  //Metodos
-  public void vacunar(){
-    vacunada = false;
+  public void setEdad(int edad) {
+    this.edad = edad;
   }
 
-  public void pasear(){
 
+  public static int getTotalMascotas() {
+    return totalMascotas;
+  }
+
+  public String getChip() {
+    return chip;
+  }
+
+  //Metodos
+  public void vacunar(){
+    this.vacunada = false;
   }
 
   @Override
   public String toString() {
-    return "`[" + chip + "]: " + nombre+" "+ edad+" años";
+    return "Mascota [" + chip + "]: " + nombre + ", " + edad ;
   }
+  
   
   
 }
