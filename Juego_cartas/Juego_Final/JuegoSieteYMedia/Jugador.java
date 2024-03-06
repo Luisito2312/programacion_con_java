@@ -1,8 +1,16 @@
+// package SieteYMedia;
+
+/**
+ * Clase Jugador para el juego de las Siete y Media
+ * @author Elías Robles
+ * @author Luis Godino
+ */
+
 public class Jugador {
   private double saldo;
   private double apuestaActual;
-  public static Carta[] manoCartas;
-  public int posMano;
+  protected static Carta[] manoCartas;
+  protected int posMano;
   private double valorMano;
   private String nombre;
 

@@ -57,7 +57,7 @@ public class Carta {
 
   // Método para inicializar las cartas
   public static Carta[] inicializarCartas() {
-    Carta[] cartas = new Carta[40];
+    Carta[] cartas = new Carta[Baraja.length];
     int contador = 0; //Aqui asignamos los valores para las cartas y los metemos en el array
                       //Cualquier duda escrime al discord Luis
 

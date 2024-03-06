@@ -9,9 +9,9 @@
 public class Baraja {
 
   // Atributos
-  public static Carta[] cartas;
-  public static int posCartas;
-  public int length = 40;
+  protected static Carta[] cartas;
+  protected static int posCartas;
+  protected static int length = 40;
 
   // Constructor
   public Baraja() {
@@ -25,7 +25,7 @@ public class Baraja {
     Carta carta;
 
     for (int i = 0; i < cartas.length; i++) {
-      posAleatoria = (int) (Math.random() * 40);
+      posAleatoria = (int) (Math.random() * length);
 
       carta = cartas[i];
       cartas[i] = cartas[posAleatoria];
